@@ -30,7 +30,7 @@ const Page2 = () => (
       backgroundPosition: "center",
     }}
   >
-    <h2 className="text-[40px] font-bold">Cakes & Bakery</h2>
+    <h2 className="text-2xl font-poppins font-bold">Cakes & Bakery</h2>
     <h1 className="text-[72px] md:text-[92px] font-bold mt-4">
       Welcome To Bakery
     </h1>
@@ -58,11 +58,11 @@ const Page1 = () => (
       backgroundPosition: "center",
     }}
   >
-    <h2 className="text-lg font-bold">Cakes & Bakery</h2>
-    <h1 className="text-[72px] md:text-[92px] font-bold mt-4">
-      Occasion Cakes
-    </h1>
-    <p className="text-[24px] md:text-[40px] mt-4">The Best Coffee In China</p>
+    <h2 className="text-xl md:text-2xl font-poppins font-bold">
+      Cakes & Bakery
+    </h2>
+    <h1 className="text-[72px] md:text-8xl font-bold ">Occasion Cakes</h1>
+    <p className="text-[24px] md:text-4xl mt-4">The Best Coffee In China</p>
     <div className="flex gap-4 mt-8">
       <button className="bg-teal-500 text-white px-6 py-3 rounded-md text-lg hover:bg-teal-600">
         About Us
@@ -76,17 +76,28 @@ const Page1 = () => (
 
 const Welcome = () => {
   return (
-    <div className="welcome-container w-full h-screen absolute">
+    <div className="welcome-container w-full h-screen relative overflow-hidden">
+      <div
+        className="bg-gray-1000 h-3 w-screen absolute left-0 top-0 z-10"
+        style={{
+          backgroundImage: "url('zigzag.png')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          opacity: 1, // Adjust transparency
+        }}
+      ></div>
+
       <Carousel
         responsive={responsive}
         autoPlay={true} // Enable autoplay
-        autoPlaySpeed={3000} // Set the autoplay interval
+        autoPlaySpeed={2000} // Set the autoplay interval
         infinite={true} // Loop infinitely
         arrows={true} // Enable navigation arrows
-        showDots={true} // Show navigation dots
+        showDots={false} // Show navigation dots
         centerMode={false} // Disable center mode to show one image at a time
         containerClass="carousel-container" // Custom container class
-        itemClass="carousel-item" // Custom item class
+        itemClass="carousel-item transition-all ease-in-out duration-500" // Smooth transitions for items
         renderDotsOutside={true} // Render dots outside the carousel
       >
         <div>

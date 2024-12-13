@@ -26,7 +26,7 @@ const Card = () => {
 
   return (
     <div
-      className="py-10 mt-[35rem]"
+      className="py-10 -mt-[8rem]"
       style={{
         backgroundImage: "url('./bg.jpg')",
         backgroundSize: "cover", // Ensure image covers the whole area
