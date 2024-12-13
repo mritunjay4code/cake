@@ -22,7 +22,7 @@ const responsive = {
 
 const Page2 = () => (
   <div
-    className="w-full h-screen text-center text-white flex flex-col justify-center items-center"
+    className="w-full h-[75vh] sm:h-[90vh] text-center text-white flex flex-col justify-center items-center"
     style={{
       backgroundImage: "url('/s1.jpg')",
       backgroundRepeat: "no-repeat",
@@ -31,12 +31,8 @@ const Page2 = () => (
     }}
   >
     <h2 className="text-2xl font-poppins font-bold">Cakes & Bakery</h2>
-    <h1 className="text-[72px] md:text-[92px] font-bold mt-4">
-      Welcome To Bakery
-    </h1>
-    <p className="text-[24px] md:text-[40px] mt-4">
-      The Best Cakes In New York
-    </p>
+    <h1 className="text-4xl md:text-8xl font-bold">Welcome To Bakery</h1>
+    <p className="text-2xl md:text-[40px] mt-4">The Best Cakes In New York</p>
     <div className="flex gap-4 mt-8">
       <button className="bg-teal-500 text-white px-6 py-3 rounded-md text-lg hover:bg-teal-600">
         About Us
@@ -50,7 +46,7 @@ const Page2 = () => (
 
 const Page1 = () => (
   <div
-    className="w-full h-screen text-center text-white flex flex-col justify-center items-center"
+    className="w-full h-[75vh] sm:h-[90vh] text-center text-white flex flex-col justify-center items-center"
     style={{
       backgroundImage: "url('/s2.jpg')",
       backgroundRepeat: "no-repeat",
@@ -58,12 +54,10 @@ const Page1 = () => (
       backgroundPosition: "center",
     }}
   >
-    <h2 className="text-xl md:text-2xl font-poppins font-bold">
-      Cakes & Bakery
-    </h2>
-    <h1 className="text-[72px] md:text-8xl font-bold ">Occasion Cakes</h1>
-    <p className="text-[24px] md:text-4xl mt-4">The Best Coffee In China</p>
-    <div className="flex gap-4 mt-8">
+    <h2 className="text-2xl  font-poppins font-bold">Cakes & Bakery</h2>
+    <h1 className="text-4xl md:text-8xl font-bold ">Occasion Cakes</h1>
+    <p className="text-2xl md:text-4xl mt-4">The Best Coffee In China</p>
+    <div className="flex gap-2 mt-8">
       <button className="bg-teal-500 text-white px-6 py-3 rounded-md text-lg hover:bg-teal-600">
         About Us
       </button>

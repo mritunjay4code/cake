@@ -26,13 +26,8 @@ const Card = () => {
 
   return (
     <div
-      className="py-10 -mt-[8rem]"
-      style={{
-        backgroundImage: "url('./bg.jpg')",
-        backgroundSize: "cover", // Ensure image covers the whole area
-        backgroundPosition: "center", // Center the background image
-        minHeight: "100vh", // Ensures it covers full viewport height
-      }}
+      className="py-10 -mt-40 bg-cover bg-center min-h-screen"
+      style={{ backgroundImage: "url('./a1.jpg')" }}
     >
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
         {cards.map((card, index) => (
@@ -63,7 +58,7 @@ const Card = () => {
       </div>
 
       <div
-        className="bg-white text-center my-20 px-6 relative"
+        className="bg-white text-center my-12 md:my-20 px-6 relative"
         style={{
           backgroundImage: "url('./bg.jpg')",
           backgroundSize: "cover",
@@ -78,21 +73,22 @@ const Card = () => {
         {/* Content */}
         <div className="relative z-10">
           <div className="flex justify-center items-center gap-4 mb-6">
-            <h1 className="text-[22px] md:text-3xl font-semibold text-teal-600">
+            <h1 className="text-[22px] md:text-3xl font-semibold font-poppins text-teal-600">
               It's a party and you're invited
             </h1>
           </div>
-          <p className="text-gray-700 text-lg  md:text-3xl leading-8 mb-4 mx-5 md:mx-24">
+          <p className="text-gray-700 text-xl  md:text-3xl leading-8 mb-4 mx-2 md:mx-24">
             Join DexignZone{" "}
             <span className="font-bold border-b-2 border-dotted border-gray-500">
               Bakery™
             </span>{" "}
-            to earn Gold level benefits like free Cakes and food, get
+            to earn Gold level benefits like free Cakes and food, get free
+            refills, pay and order with your phone, and more.
           </p>
-          <p className="text-gray-700 text-lg md:text-3xl leading-8 mb-4 mx-5 md:mx-24">
-            free refills, pay and order with your phone, and more.
-          </p>
-          <p className="text-gray-700 text-lg md:text-3xl mb-4 mx-5 md:mx-24">
+          {/* <p className="text-gray-700 text-lg md:text-3xl leading-8 mb-4 mx-5 md:mx-24">
+            
+          </p> */}
+          <p className="text-gray-700 text-xl  md:text-3xl leading-8 mb-4 mx-2 md:mx-24">
             Exclusive deals on Cakes, delivered straight to your inbox, Join
             Now.
           </p>

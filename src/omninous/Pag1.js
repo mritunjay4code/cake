@@ -45,18 +45,18 @@ const Pag1 = () => {
         minHeight: "100vh", // Ensures it covers full viewport height
       }}
     >
-      <h2 className="text-4xl font-bold mb-4 flex justify-center items-center">
-        What Do We Offer For You?
-      </h2>
-      <p className="text-gray-400 text-xl  flex justify-center items-center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </p>
-      <p className="text-gray-400 mb-16  text-xl  flex justify-center items-center">
-        {" "}
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s.
-      </p>
+      <div className="text-center">
+        <h2 className="text-4xl font-bold mb-4">What Do We Offer For You?</h2>
+        <p className="text-gray-400 text-xl ">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p className="text-gray-400 mb-16 text-xl">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s.
+        </p>
+      </div>
+
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         {/* Image Section */}
 
