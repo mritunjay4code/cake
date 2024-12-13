@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./omninous/Header";
+import Card from "./omninous/Card";
+import Pag1 from "./omninous/Pag1";
+import Welcome from "./omninous/Welcome";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />    
+      <Welcome/>
+      <Card />
+      <Pag1 />
     </div>
   );
-}
+};
 
 export default App;
