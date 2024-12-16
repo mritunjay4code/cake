@@ -33,7 +33,7 @@ const Card = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="relative bg-white shadow-md rounded-lg overflow-hidden group"
+            className="relative bg-white shadow-md rounded-lg overflow-hidden group transform transition-transform duration-500 hover:rotate-3 hover:scale-105"
           >
             {/* Image */}
             <img
@@ -63,7 +63,7 @@ const Card = () => {
         className="bg-white text-center my-12 md:my-20 px-6 relative"
         style={{
           backgroundImage: "url('./bg.jpg')",
-          backgroundSize: "cover",
+          backgroundSize: "100vh",
           backgroundPosition: "center",
         }}
       >
