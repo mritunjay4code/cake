@@ -30,14 +30,16 @@ const Page2 = () => (
       backgroundPosition: "center",
     }}
   >
-    <h2 className="text-2xl font-poppins font-bold">Cakes & Bakery</h2>
+    <h2 className="text-xl sm:text-2xl  font-bold">Cakes & Bakery</h2>
     <h1 className="text-4xl md:text-8xl font-bold">Welcome To Bakery</h1>
-    <p className="text-2xl md:text-[40px] mt-4">The Best Cakes In New York</p>
-    <div className="flex gap-4 mt-8">
+    <p className="text-xl md:text-[40px] font-poppins mt-4">
+      The Best Cakes In New York
+    </p>
+    <div className="flex gap-1 mt-8">
       <button className="bg-teal-500 text-white px-6 py-3 rounded-md text-lg hover:bg-teal-600">
         About Us
       </button>
-      <button className="bg-white text-teal-500 px-6 py-3 rounded-md text-lg hover:bg-gray-200">
+      <button className="bg-white text-teal-500 px-6 py-3 rounded-md text-lg  hover:bg-[#44b5b2] hover:text-white">
         Subscribe Now
       </button>
     </div>
@@ -54,14 +56,16 @@ const Page1 = () => (
       backgroundPosition: "center",
     }}
   >
-    <h2 className="text-2xl  font-poppins font-bold">Cakes & Bakery</h2>
+    <h2 className="text-xl sm:text-2xl   font-bold">Cakes & Bakery</h2>
     <h1 className="text-4xl md:text-8xl font-bold ">Occasion Cakes</h1>
-    <p className="text-2xl md:text-4xl mt-4">The Best Coffee In China</p>
-    <div className="flex gap-2 mt-8">
-      <button className="bg-teal-500 text-white px-6 py-3 rounded-md text-lg hover:bg-teal-600">
+    <p className="text-xl font-poppins md:text-4xl mt-4">
+      The Best Coffee In China
+    </p>
+    <div className="flex gap-1 mt-8">
+      <button className="bg-[#44b5b2] text-white px-6 py-3 rounded-md text-lg hover:bg-teal-700">
         About Us
       </button>
-      <button className="bg-white text-teal-500 px-6 py-3 rounded-md text-lg hover:bg-gray-200">
+      <button className="bg-white text-teal-500 px-6 py-3 rounded-md text-lg hover:bg-[#44b5b2] hover:text-white">
         Subscribe Now
       </button>
     </div>
@@ -72,7 +76,7 @@ const Welcome = () => {
   return (
     <div className="welcome-container w-full h-screen relative overflow-hidden">
       <div
-        className="bg-gray-1000 h-3 w-screen absolute left-0 top-0 z-10"
+        className="bg-gray-1000 h-1 sm:h-2 w-screen absolute left-0 top-0 z-10"
         style={{
           backgroundImage: "url('zigzag.png')",
           backgroundRepeat: "repeat",
@@ -84,15 +88,15 @@ const Welcome = () => {
 
       <Carousel
         responsive={responsive}
-        autoPlay={true} // Enable autoplay
-        autoPlaySpeed={2000} // Set the autoplay interval
-        infinite={true} // Loop infinitely
-        arrows={true} // Enable navigation arrows
-        showDots={false} // Show navigation dots
-        centerMode={false} // Disable center mode to show one image at a time
-        containerClass="carousel-container" // Custom container class
-        itemClass="carousel-item transition-all ease-in-out duration-500" // Smooth transitions for items
-        renderDotsOutside={true} // Render dots outside the carousel
+        autoPlay={true}
+        autoPlaySpeed={2000}
+        infinite={true}
+        arrows={true}
+        showDots={false}
+        centerMode={false}
+        containerClass="carousel-container"
+        itemClass="carousel-item transition-all ease-in-out duration-500"
+        renderDotsOutside={true}
       >
         <div>
           <Page1 />

@@ -7,8 +7,8 @@ import Welcome from "./omninous/Welcome";
 const App = () => {
   return (
     <div>
-      <Header />    
-      <Welcome/>
+      <Header />
+      <Welcome />
       <Card />
       <Pag1 />
     </div>

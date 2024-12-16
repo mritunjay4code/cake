@@ -15,7 +15,7 @@ const StackedCard = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="bg-[#111F25]  h-full w-full">
+    <div className="bg-[#111F25]  h-full w-full mt-36">
       <div className="p-[8%] mx-auto  flex flex-col lg:flex-row ">
         {/* Left Section: Testimonials */}
         <div className="w-full lg:w-1/2">

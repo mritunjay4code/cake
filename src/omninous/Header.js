@@ -11,23 +11,22 @@ const Header = () => {
     <header className="bg-white relative shadow p-3">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40">
         <div className="flex justify-between items-center h-10 md:h-16">
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-left space-x-8">
             <a
               href="#home"
-              className="text-teal-500 font-semibold hover:text-teal-600 font-poppins"
+              className="text-teal-500 text-xl font-semibold hover:text-teal-600 font-amita "
             >
               Home
             </a>
             <a
-              href="#pages"
-              className="text-gray-700 hover:text-teal-600 font-poppins"
-              style={{ fontFamily: "'Amrit', sans-serif", fontWeight: 500 }}
+              href="#home"
+              className=" font-semibold text-xl text-gray-500 font-amita hover:text-teal-600"
             >
-              Pages
+              pages
             </a>
             <a
               href="#menu"
-              className="text-gray-700 hover:text-teal-600 font-poppins"
+              className=" font-semibold text-xl text-gray-500 font-amita hover:text-teal-600"
             >
               Our Menu
             </a>
@@ -48,19 +47,19 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#blog"
-              className="text-gray-700 hover:text-teal-600 font-poppins"
+              className=" font-semibold text-xl text-gray-500 font-amita hover:text-teal-600"
             >
               Blog
             </a>
             <a
               href="#shop"
-              className="text-gray-700 hover:text-teal-600 font-poppins"
+              className=" font-semibold text-xl text-gray-500 font-amita hover:text-teal-600"
             >
               Shop
             </a>
             <a
               href="#contact"
-              className="text-gray-700 hover:text-teal-600 font-poppins"
+              className=" font-semibold text-xl text-gray-500 font-amita hover:text-teal-600"
             >
               Contact Us
             </a>
