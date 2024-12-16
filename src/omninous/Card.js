@@ -26,10 +26,10 @@ const Card = () => {
 
   return (
     <div
-      className="py-10 -mt-40 bg-cover bg-center min-h-screen"
+      className="py-10 -mt-40 sm:-mt-16 md:-mt-40 bg-cover bg-center min-h-screen"
       style={{ backgroundImage: "url('./a1.jpg')" }}
     >
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 px-6">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-6">
         {cards.map((card, index) => (
           <div
             key={index}
