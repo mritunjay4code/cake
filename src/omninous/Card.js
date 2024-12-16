@@ -5,22 +5,22 @@ const Card = () => {
     {
       title: "Macarons",
       description: "Lorem Ipsum is simply",
-      image: "p1.jpg", // Replace with macaron image URL
+      image: "p1.jpg",
     },
     {
       title: "Small Cakes",
       description: "Lorem Ipsum is simply",
-      image: "p2.jpg", // Replace with small cake image URL
+      image: "p2.jpg",
     },
     {
       title: "Occasion Cakes",
       description: "Lorem Ipsum is simply",
-      image: "p3.jpg", // Replace with occasion cake image URL
+      image: "p3.jpg",
     },
     {
       title: "Desserts",
       description: "Lorem Ipsum is simply",
-      image: "p4.jpg", // Replace with dessert image URL
+      image: "p4.jpg",
     },
   ];
 
@@ -29,7 +29,7 @@ const Card = () => {
       className="py-10 -mt-40 bg-cover bg-center min-h-screen"
       style={{ backgroundImage: "url('./a1.jpg')" }}
     >
-      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6">
+      <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 px-6">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -39,7 +39,7 @@ const Card = () => {
             <img
               src={card.image}
               alt={card.title}
-              className="w-full h-96 md:h-[75vh] object-cover transition-transform duration-500 group-hover:scale-110"
+              className="w-full h-96 md-h[70vh] xl:h-[75vh] object-cover transition-transform duration-500 group-hover:scale-110"
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70 group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -60,11 +60,9 @@ const Card = () => {
       </div>
 
       <div
-        className="bg-white text-center my-12 md:my-20 px-6 relative"
+        className="bg-white text-center my-12 md:my-20 px-6 relative  bg-cover  sm:bg-contain md:bg-cover"
         style={{
           backgroundImage: "url('./bg.jpg')",
-          backgroundSize: "100vh",
-          backgroundPosition: "center",
         }}
       >
         {/* Centering the image */}
@@ -72,7 +70,6 @@ const Card = () => {
           <img className="max-w-full h-32" src="c1.jpg" alt="Party Image" />
         </div>
 
-        {/* Content */}
         <div className="relative z-10">
           <div className="flex justify-center items-center gap-4 mb-6">
             <h1 className="text-[22px] md:text-3xl font-semibold  text-teal-600">
@@ -87,9 +84,7 @@ const Card = () => {
             to earn Gold level benefits like free Cakes and food, get free
             refills, pay and order with your phone, and more.
           </p>
-          {/* <p className="text-gray-700 text-lg md:text-3xl leading-8 mb-4 mx-5 md:mx-24">
-            
-          </p> */}
+
           <p className="text-gray-700 text-xl font-poppins md:text-xl leading-8 mb-4 mx-2 md:mx-24">
             Exclusive deals on Cakes, delivered straight to your inbox, Join
             Now.
